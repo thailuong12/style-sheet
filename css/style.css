@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+
+}
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #737eafcc, #0000009a), url(../img/1295620_buddha-wallpaper-hd-1920x1080.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0% 100%);
+    position: relative;
+}
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo {
+    height: 55px;
+}
+
+.heading-primary {
+    color: white;
+}
+
+.text-box {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    text-align: center;
+}
+
+.heading-primary-main {
+    display: block;
+    text-align: center;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+}
+
+.heading-primary-sub {
+    display: block;
+    text-align: center;
+    font-family: "Brush Script MT", cursive;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+    margin-bottom: 60px;
+}
+
+.btn:link,
+btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(190, 223, 44, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(190, 223, 44, 0.2);
+}
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
+/* animations */
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(30px);
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    30% {
+        opacity: 0.3;
+        transform: translateX(-20px);
+    }
+
+    70% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
